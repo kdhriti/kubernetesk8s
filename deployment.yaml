@@ -5,6 +5,7 @@ kind: Deployment
 metadata:
 
   name: dhriti-deployment
+  namespace: ingress-nginx
 
   labels:
 
@@ -34,7 +35,7 @@ spec:
 
       - name: dhriti
 
-        image: dhritik1/dhritirepo
+        image: dhritik1/dhritikubernetes
 
         ports:
 
